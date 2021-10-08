@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ACA VA TODO EL CONTENIDO DE LA PAGINA WEB QUE SE MUESTRA POR EL EXPLORADOR -->
+    <h1>ESTE ES EL TITULO PRINCIPAL</h1> <!--El h1 se usa en los buscadores, es lo primero que se ve de la web y deberia describir el contenido de la pagina, es mala practica usarlo mas de 1 vez por pagina-->
+    <h2>Este es el subtitulo</h2>
+    <h3>Titulos de secciones</h3>
+    <h4>Titulos de articulos</h4>
+    <h5>Acepto terminos y condiciones</h5>
+    <h6>La letra chica</h6>
+    <!-- ALT + click abajo (en este caso) y te escribe en todos los campos lo mismo -->
+    <!-- ALT + click abajo (en este caso) y te escribe en todos los campos lo mismo -->
+    <!-- Parrafos, se usan para cargar contenido en textos planos -->
+    <p>
+        ESTO ES UN PARRAFO
+        y esto es otro
+    </p>
+    <p>
+        Esto es otro parrafo
+    </p>
+    <ol>
+        <!-- Ordered lists, listas ordenadas -->
+        <li>Elemento 1</li>
+        <li>ELemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+    <ul>
+        <!-- Unordered lists, listas desordenadas -->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3
+            <ol>
+                <li>Elemento</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- Hipervinculos, nos redirige a otra pagina -->
+    <a href="https://www.google.com" target="_blank">IR A GOOGLE</a>
+
+    <!-- Como saltear renglones -->
+    <br>
+    <!-- NO USAR EN TRABAJOS -->
+
+    <!-- Imagenes -->
+    <a href="https://www.animalfiel.com/wp-content/uploads/2020/10/tipos-de-perro-salchicha.jpg" target="_blank">
+       
+        <img src="https://www.animalfiel.com/wp-content/uploads/2020/10/tipos-de-perro-salchicha.jpg" alt="Perro salchicha">
+    </a>
+
+
+    <!-- Elementos semanticos y no semanticos (VER W3 school) -->
+
+    <!-- Los divs -->
+    <!-- Define una división o sección en un documento HTML. Se utiliza como contenedor de elementos HTML, que luego se estiliza con CSS o se manipula con JavaScript. La etiqueta <div> se puede añadir estilo fácilmente utilizando el atributo class o id. ¡Se puede poner cualquier tipo de contenido dentro de la etiqueta <div>! -->
+    <div>
+
+    </div>
+
+    <!-- La etiqueta form se utiliza para crear un formulario HTML para la entrada del usuario. El elemento <form> puede contener uno o más de los siguientes elementos de formulario: 
+    <input>
+    <textarea>
+    <button>
+    <select>
+    <option>
+    <optgroup>
+    <fieldset>
+    <label>
+    <output> -->
+    <!-- https://www.w3schools.com/TAGS/tag_form.asp -->
+    <form>
+        <!-- Sugerencia: El atributo for de <label> debe ser igual al atributo id del elemento relacionado para unirlos. Una etiqueta también se puede vincular a un elemento colocando el elemento dentro del <label>elemento.  -->
+        <label for="Nombre">Nombre y Apellido</label>
+        <input type="text" name="nombre">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="john@doe.com">
+        <br>
+        <label for="password">Pasword</label>
+        <input type="password" name="password" required>
+        <br>
+        <input type="number">
+        <br>
+        <input type="date">
+        <br>
+        <input type="color">
+        <br>
+        <input type="radio">
+        <br>
+        <input type="textarea">
+        <br>
+        <input type="file">
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <select> <!-- Puede ir dentro o fuera del Form -->
+            <option value="Femenino">F</option>
+            <option value="Masculino">M</option>
+            <option value="No binario">X</option>
+        </select>
+    </form>
+
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+</body>
+</html>

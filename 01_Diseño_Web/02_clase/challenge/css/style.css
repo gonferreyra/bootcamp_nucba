@@ -1,0 +1,19 @@
+#conteiner{
+    margin: auto;
+    text-align: center;
+}
+img{
+    border-radius: 8px;
+    height: 350px;
+    width: auto;
+}
+ul{
+    width: 20%;
+    margin: auto;
+    text-align: left;
+}
+.info{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
