@@ -8,7 +8,7 @@
 .wrapper > *{
     padding: 10px;
     flex: 1 100%;
-    /* 1=flex-grow y 100% flex-basis */
+    /* 1=flex-grow y 100% flex-basis, VER!! */
     /* El 1 indica al 1er contenedor (1ra columna seria en este caso) que ucupe el 100% de la fila, investigar bien */
 }
 .header{
