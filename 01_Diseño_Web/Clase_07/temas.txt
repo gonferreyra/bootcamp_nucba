@@ -1,0 +1,6 @@
+medias queries (footer down o cascada descenciendte)
+responsive
+mobile first
+Ver col 1-12, como se calcula (segun el contenido se define la col) GRID
+
+

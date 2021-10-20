@@ -8,7 +8,7 @@
 .wrapper > *{
     padding: 10px;
     flex: 1 100%;
-    /* 1=flex-grow y 100% flex-basis, VER!! */
+    /* 1=posicion 1 100% del contenedor, VER!! */
     /* El 1 indica al 1er contenedor (1ra columna seria en este caso) que ucupe el 100% de la fila, investigar bien */
 }
 .header{
@@ -29,3 +29,19 @@
 }
 
 /* Vamos a usar etiquetas de las clases */
+
+@media all and (min-width: 600px) {
+    .aside {flex: 1 0 0;}
+}
+
+@media all and (min-width: 800px) {
+    .main {flex: 3.0px;}
+    .aside-1 {order: 1;}
+    .main {order: 2;}
+    .aside-2 {order: 3;}
+    .footer {order: 4;}
+}
+
+body{
+    padding: 2em;
+}
