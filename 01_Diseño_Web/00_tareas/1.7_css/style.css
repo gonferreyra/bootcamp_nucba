@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f8f8f8;
+    background-color: #f1faee;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .navbar{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
-    height: 11em;
+    height: 10em;
     padding: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +24,10 @@ body{
 }
 .navbar .logo img{
     height: 3em;
+    
+}
+.navbar .logo h2{
+    padding-left: 15px ;
 }
 .nav_menu ul{
     list-style: none;
@@ -38,18 +44,21 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 25px;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #a8dadc;
+    padding: 1em 0em;
 
 }
 .info .laptops{
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 15px;
 }
 .info .laptops img{
-    width: 70%;
+    width: 40%;
 }
 
 footer{
@@ -58,10 +67,47 @@ footer{
     text-align: center;
 }
 .footer a img{
-    width: 150px;
+    width: 100px;
 }
 .footer a p{
     color:black;
+}
+
+
+/* about site */
+
+.hp_factory .hp_picture img{
+    width: 100%;
+    height: 33em;
+}
+
+/*---------------------------------- GRID about site---------------------------------- */
+
+.container{
+    border: 1pz solid black;
+}
+.container div{
+    border: 1px solid blue;
+    width: 100%;
+    height: 200px;
+}
+.container .content1 p{
+    padding: 75px;
+}
+.container .content2 p{
+    padding: 65px;
+}
+.img1 img{
+    width: 100%;
+    height: 197px;
+}
+.img2 img{
+    width: 100%;
+    height: 197px;
+}
+.content1, .content2{
+    background-color: #457b9d;
+    color: white;
 }
 
 
@@ -74,8 +120,41 @@ footer{
         justify-content: space-between;
         align-items: center;
         height: 6em;
+        margin: 0;
     }
     .nav_menu ul{
         flex-direction: row;
     }
+    .info{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* about grid breakpoint */
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px 20px; 
+        margin: 15px 25px;
+        grid-template-areas: 
+        "content1 content1 img1"
+        "img2 content2 content2";
+    }
+    .content1{
+        grid-area: content1;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+    .content2{
+        grid-area: content2;
+    }
+
+
+
 }
