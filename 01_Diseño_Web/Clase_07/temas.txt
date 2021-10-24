@@ -4,3 +4,27 @@ mobile first
 Ver col 1-12, como se calcula (segun el contenido se define la col) GRID
 
 
+TAREA:
+Hoy vimos:
+
+1. Repaso de flex
+2. Intro a responsive
+3. Media Querys
+4. Grid
+
+Recuerden, subir los challenges a github y subir su repo al form de repos y las dudas y preguntas al form de dudas/consultas n.n
+
+De tarea tienen esto:
+
+Tomar un tema que nos guste, y crear un sitio de varias páginas en HTML y utilizar flexbox y box model para ordenar el contenido del sitio.
+
+Tiene que usar Grid y Media Query para que sea responsive 🙂
+
+Los estilos son libres, es decir pueden crear los estilos que gusten.
+
+Lo que si, el sitio debe incluir, una página de contacto, una de “acerca de..”, otra con el “home” y todas las extras que quieran.
+Por otro lado, un par de recomendaciones para codear, aparte de usar pomodoros, se las dejo en estos links:
+
+- recuerden que en estos tiempos de mucho home-office, pandemia, cambios de paradigma laborales, estudiantiles, etc, la salud mental para todo es re importante cuidarla, se las dejo en estos links n.n
+
+
