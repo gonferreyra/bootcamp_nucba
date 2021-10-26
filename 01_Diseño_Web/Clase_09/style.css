@@ -1,0 +1,30 @@
+.cyan{
+    width: 100px;
+    height: 100px;
+    background: cyan;
+    border: 1px solid black;
+    /* transform: translate(50px, 100px);
+    transform: rotate(20deg); */
+    /* transform: scale(2,1); */
+    border-radius: 50px;
+}
+.cyan:hover{
+    transform: translate(50px, 100px);
+    transform: rotate(20deg);
+    transform: scaleY(0.5);
+    /* Eje x o y */
+    transform: skew(20deg);
+    transform: matrix(1, 0, 0.5, 1, 150, 150);
+
+}
+
+.rosita{
+    background-color: palevioletred;
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+}
+.rosita:hover{
+    transform: rotateZ(150deg);
+    perspective: 100px;
+}
