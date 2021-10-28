@@ -1,0 +1,99 @@
+.cyan{
+    width: 100px;
+    height: 100px;
+    background: cyan;
+    border: 1px solid black;
+    /* transform: translate(50px, 100px);
+    transform: rotate(20deg); */
+    /* transform: scale(2,1); */
+    border-radius: 50px;
+}
+.cyan:hover{
+    transform: translate(50px, 100px);
+    transform: rotate(20deg);
+    transform: scaleY(0.5);
+    /* Eje x o y */
+    transform: skew(20deg);
+    transform: matrix(1, 0, 0.5, 1, 150, 150);
+
+}
+
+.rosita{
+    background-color: palevioletred;
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+}
+.rosita:hover{
+    transform: rotateZ(150deg);
+    perspective: 100px;
+}
+
+/* CSS 2D Transforms Methods
+
+With the CSS transform property you can use the following 2D transformation methods:
+
+translate()
+The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+
+The following example moves the <div> element 50 pixels to the right, and 100 pixels down from its current position: transform: translate(50px, 100px);
+
+rotate()
+The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
+
+The following example rotates the <div> element clockwise with 20 degrees: transform: rotate(20deg);
+Using negative values will rotate the element counter-clockwise.
+
+scale()
+The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+
+The following example increases the <div> element to be two times of its original width, and three times of its original height: transform: scale (2,3):
+
+scaleX()
+The scaleX() method increases or decreases the width of an element.
+
+The following example increases the <div> element to be two times of its original width: transform: scaleX(2)
+
+scaleY()
+The scaleY() method increases or decreases the height of an element.
+
+The following example increases the <div> element to be three times of its original height: transform: scaleY(3). The following example decreases the <div> element to be half of its original height: transform: scaleY(0.5)
+
+skewX()
+The skewX() method skews an element along the X-axis by the given angle.
+
+The following example skews the <div> element 20 degrees along the X-axis: transform: skewX(20deg)
+
+skewY()
+The skewY() method skews an element along the Y-axis by the given angle.
+
+The following example skews the <div> element 20 degrees along the Y-axis: transform: skewY(20deg)
+
+Example
+
+skew()
+The skew() method skews an element along the X and Y-axis by the given angles.
+
+The following example skews the <div> element 20 degrees along the X-axis, and 10 degrees along the Y-axis:  transform: skew(20deg, 10deg)
+
+matrix()
+The matrix() method combines all the 2D transform methods into one.
+
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.
+
+The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())::after
+
+
+CSS 3D Transforms Methods
+With the CSS transform property you can use the following 3D transformation methods:
+
+rotateX()
+The rotateX() method rotates an element around its X-axis at a given degree: transform: rotateX(150deg)
+
+rotateY()
+The rotateY() method rotates an element around its Y-axis at a given degree: transform:rotateY(150deg)
+
+rotateZ()
+The rotateZ() method rotates an element around its Z-axis at a given degree: transform: rotateZ(90deg)
+
+*/
