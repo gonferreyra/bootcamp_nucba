@@ -133,15 +133,15 @@
 
 // Solicitar al usuario que ingrese una cadena de texto y luego un una posición. Indicar si el dígito de esa posición es vocal o no lo es. (Puede ser consonante, espacio, comilla, etc.)
 
-let texto = prompt("Ingrese una cadena de texto");
-let posicion = parseInt(prompt("Ingrese una posicion"));
-if(texto.charAt(posicion) == "a" || texto.charAt(posicion) == "e" || texto.charAt(posicion) == "i" || texto.charAt(posicion) == "o" || texto.charAt(posicion) == "u" )
-{
-    alert("El digito elegido es una vocal");
-}else
-{
-    alert("El digito elegido no es una vocal");
-}
+// let texto = prompt("Ingrese una cadena de texto");
+// let posicion = parseInt(prompt("Ingrese una posicion"));
+// if(texto.charAt(posicion) == "a" || texto.charAt(posicion) == "e" || texto.charAt(posicion) == "i" || texto.charAt(posicion) == "o" || texto.charAt(posicion) == "u" )
+// {
+//     alert("El digito elegido es una vocal");
+// }else
+// {
+//     alert("El digito elegido no es una vocal");
+// }
 
 
 
@@ -243,3 +243,139 @@ if(texto.charAt(posicion) == "a" || texto.charAt(posicion) == "e" || texto.charA
 
 // Solicitar al usuario un número de mes y devolver el nombre. (Ej: Ingreso 4 y me devuelve “Abril”).
 
+// hacer con switch
+
+
+// BONUS:
+
+// Solicitar al usuario su clave de 4 dígitos (que tendremos almacenada en una variable) y el monto a retirar. Si la clave es correcta y el monto mayor al balance, realizar la operación. Sino, mostrar un mensaje de error en caso de ser la clave incorrecta o pedir más dinero del disponible.
+
+// let clave = 1234;
+// let balance = 50000;
+// let claveIngresada = parseInt(prompt("Ingrese su clave de 4 digitos"));
+
+
+// if (claveIngresada != clave) {
+//     alert("La clave es incorrecta");
+//     } else {
+//         alert("ingresado");
+//         let monto = parseInt(prompt("ingrese el monto a retirar"));
+//         if (balance>=monto) {
+//             alert("")
+//         } else {
+//             alert("Saldo insuficiente");
+//         }
+//     }
+
+// Solicitar al usuario su día y mes de nacimiento e indicar cual es su signo zodiacal.
+
+
+
+
+// Solicitar al usuario que ingrese la hora y su nombre. Si son entre las 12 inclusive y 19 saludar con buenas tardes, entre 19 inclusive y 5 buenas noches, y entre 5 inclusive y 12 buenos días.
+
+// let hora = prompt("Ingresar la hora");
+// let nombre = prompt("Ingresa tu nombre");
+
+// if (hora >=12 && hora <19) {
+//     alert("Buenas tardes " + nombre);
+// } else if ((hora >= 19 && hora<=24) || (hora >=1 && hora <5)) {
+//     alert("Buenas noches " + nombre);
+// } else {
+//     alert("Buen dia " + nombre);
+// }
+
+
+
+// Ejercicios de bucles
+
+// 0) Agregar en el ejercicio de home banking la posibilidad de seguir operando hasta que el usuario decida salir.
+// let bucle = true;
+
+// let continuar = "";
+// let clave = 1234;
+// let balance = 50000;
+// do
+// {
+//     let claveIngresada = parseInt(prompt("Ingrese su clave de 4 digitos"));
+    
+    
+//     if(claveIngresada != clave)
+//     {
+//         alert("La clave es incorrecta");
+    
+//     }else
+//     {
+//         alert("Ud. ha podido ingresar con exito");
+//         let monto = parseInt(prompt("Su balance es de " + balance + "\n Ingrese el monto a retirar"));
+    
+//         if(balance >= monto)
+//         {
+//             balance = balance - monto;
+//             alert("La operacion fue realizada con exito \n El saldo restante es de: " + balance);
+//         }else
+//         {
+//             alert("El balance es menor al monto a retirar");
+//         }
+//     }
+
+//     continuar = prompt("Desea seguir operando? (Si o No)");    
+// }while (continuar == "Si")
+
+
+// Mostrar los primeros 10 números naturales. (1,2,3,4,5,6,7,8,9,10). 
+
+// for (let numeros = 0; numeros < 11; numeros++) {
+//     alert(numeros);
+// }
+
+// Solicitar al usuario que ingrese 5 números y mostrar la suma de ellos.
+
+// let suma = Number();
+// for (let resultado = 0; resultado < 5; resultado++) {
+//     let numeros = parseInt(prompt("Ingrese 1 numero"));
+//     suma += numeros;   
+// }
+// alert(suma);
+
+
+// Solicitar al usuario que indique cuántos números quiere ingresar y mostrar el resultado de la suma de ellos.
+// Solicitar al usuario que ingrese números hasta que desee y luego mostrar la suma de ellos.
+// Solicitar al usuario que ingrese tantos números como desee y luego mostrar el promedio de ellos.
+// Realizar un programa que pida al usuario un número y muestre los números del 1 al número introducido. 
+// Realizar un programa que pida al usuario dos números y muestre los números del primer número al segundo. (Ejemplo: 5 y 9: 6,7,8) Aceptar solo enteros. 
+// Preguntar al usuario cuántos números quiere ingresar. Luego solicitar que los ingrese uno por uno y mostrar cuál es el mayor.
+// Solicitar al usuario que ingrese la cantidad de números que quiera, uno por uno, y mostrar cual es el menor de todos.
+// Solicitar al usuario que ingrese un número y mostrar, en una sola cadena de string, la cantidad de asteriscos qué indique en el número. (Ejemplo: 5, “*****”.)
+// Realizar un programa que pida la base y el exponente y calcule la potencia. 
+// Realizar un programa que pida un número y calcule su factorial.  (Ejemplo de factorial: 5! Factorial de 5 es 5*4*3*2*1 )
+// Realizar un programa que pida un número y diga todos sus divisores. (Se verifica que un número es divisor del otro cuando el resto de dividir por ese número es 0.)
+// Solicitar al usuario que ingrese un número y una cadena de caracteres. Mostrar por consola la cantidad de caracteres se hayan solicitado. (Ejemplo: “Hola Nucba” , 4), debe mostrar:
+// H
+// O
+// L
+// A
+// Solicitar al usuario que ingrese una lista de supermercado y al final mostrar todos los items separados por comas. 
+// Solicitar al usuario que ingrese números. Finalizar cuando ingrese un número múltiplo de 3. Mostrar todos los números ingresados.
+
+// Bonus desafíos matemáticos !!
+
+// Agregar al ejercicio 5 una validación de que solo se acepte números del 1 al 10. Si ingresa un número no válido, volver a solicitar el dato. 
+// Realizar un programa que pida números consecutivos (3, 4 y 5; 9, 10 y 11, etc.). Cuando se introducen tres números consecutivos dice “gracias” y termina. Mientras no se introduzcan tres números consecutivos el programa sigue pidiendo números indefinidamente. 
+// Realizar un programa que pida dos números y diga su máximo común divisor. 
+// (notas sobre el Máximo Común Divisor: 
+// - Es el máximo número por el cuál se puede dividir un número dejando resto 0.
+// - No puede ser mayor al valor de la mitad del menor número o sí mismo.
+//  (Ejemplo: Si mis números son 9 y 12, no puede estar entre 5 y 8, ni ser mayor a 9).
+//  (Ejemplo: Si mis números son 10 y 15, no puede estar entre 6 y 9, ni ser mayor a 10). (Podemos probar: 1,2,3,4,10).
+// Solicitar al usuario que ingrese números. Mostrar los primeros tres multiplicados por 1, luego los próximos tres multiplicados por 2 y así sucesivamente. Cortar cuando el usuario ingrese un número mayor a 100. En cada iteración se debe mostrar la salida. Ejemplo:
+// Ingresa 1 > muestra 1 
+// Ingresa 8 > muestra 8
+// Ingresa 3 > Muestra 3
+// ingresa 4 > Muestra 8
+// Ingresa 9 > Muestra 18
+// Ingresa 50 > Muestra 100
+// Ingresa 7 > Muestra 21
+// ingresa 10 > Muestra 30
+// Solicitar al usuario que ingrese 10 números, calcular el factorial de cada uno de ellos  y mostrarlo.
+// Solicitar al usuario que ingrese un número y mostrar esa cantidad de dígitos de la secuencia de Fibonacci. 
