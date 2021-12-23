@@ -340,7 +340,9 @@
 
 
 // Solicitar al usuario que indique cuántos números quiere ingresar y mostrar el resultado de la suma de ellos.
-// Solicitar al usuario que ingrese números hasta que desee y luego mostrar la suma de ellos.
+
+
+// numerosolicitar al usuario que ingrese números hasta que desee y luego mostrar la suma de ellos.
 // Solicitar al usuario que ingrese tantos números como desee y luego mostrar el promedio de ellos.
 // Realizar un programa que pida al usuario un número y muestre los números del 1 al número introducido. 
 // Realizar un programa que pida al usuario dos números y muestre los números del primer número al segundo. (Ejemplo: 5 y 9: 6,7,8) Aceptar solo enteros. 
