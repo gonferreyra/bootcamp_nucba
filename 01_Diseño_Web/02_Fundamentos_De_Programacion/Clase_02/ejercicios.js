@@ -15,8 +15,9 @@
 
 // Solicitar al usuario que ingrese una palabra y mostrar con qué letra comienza.
 
-// let palabra = prompt("Ingresar palabra");
-// alert("La palabra comienza con la letra " + palabra.charAt(0));
+//let palabra = prompt("Ingresar palabra");
+//alert("La palabra comienza con la letra " + palabra.charAt(0));
+//alert(`La palabra comienza con la letra ${palabra[0]}`);
 
 // Solicitar al usuario que ingrese una frase y mostrar cuántos caracteres tiene.
 // let palabra = prompt("Ingresar palabra");
