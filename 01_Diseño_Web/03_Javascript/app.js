@@ -107,55 +107,97 @@ preguntarPresupuesto();
 
 // Class
 
-class Robot {
-    constructor(color, posicionX, posicionY) {
-        this.color = color;
-        this.posicionX = posicionX;
-        this.posicionY = posicionY;
+// class Robot {
+//     constructor(color, posicionX, posicionY) {
+//         this.color = color;
+//         this.posicionX = posicionX;
+//         this.posicionY = posicionY;
+//     }
+//     // Metodo dentro de class (son funciones pero al estar dentro de la class se llaman metodos)
+//     desplazar = function (X, Y) {
+//         this.posicionX = X;
+//         this.posicionY = Y;
+//     }
+//     // Metodo
+//     posicion = function () {
+//         return `Robot ${this.color}, en X ${this.posicionX} y en Y ${this.posicionY}.`;
+//     }
+// }
+
+// const robot1 = new Robot("celeste", 10, 15);
+// console.log(robot1);
+// robot1.desplazar(20, 25);
+// console.log(robot1);
+// console.log(robot1.posicion())
+
+// class Chocolate {
+//     constructor(tipo, marca) {
+//         this.tipo = tipo;
+//         this.marca = marca;
+//     }
+// }
+
+// let miChocolate = new Chocolate("Blanco", "Milkaut");
+
+
+// class Auto {
+//     constructor(marca, modelo, anio) {
+//         this.marca = marca;
+//         this.modelo = modelo;
+//         this.anio = anio;
+//     }
+//     // Metodo
+//     arrancar = function () {
+//         return `El auto arranco`;
+//     }
+//     // Metodo
+//     getMarca = function () {
+//         return this.marca;
+//     }
+// }
+
+// let auto1 = new Auto('Ford', 'Focus', 2017);
+
+
+// 👉 Crear un array con, al menos, 10 ingredientes para hacer pizzas 🍕 (puede ser tanto masa como los ingredientes que van sobre la base).
+
+// 👉 Crear una función que acepte ese array como parámetro.
+
+// Dentro de la función, debemos lograr lo siguiente:
+// 👉 Iterar ese array para lograr que, los ingredientes que tengan una cantidad par de letras, vayan a un array llamado "pares".
+// 👉 Hacer lo mismo con los impares, enviándolos al array "impares".
+// 👉 Imprimir en consola:  "Los ingredientes pares son: (ingredientes en array pares).
+// Los ingredientes impares son: (ingredientes en array impares)."
+
+// let ingredientes = ['muzarella', 'jamon', 'aceituna', 'huevo', 'panceta', 'salame', 'tomate', 'oregano', 'roquefort', 'anana'];
+
+// function parImpar(arr) {
+//     let pares = [];
+//     let impares = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].length % 2 == 0) {
+//             pares.push(arr[i]);
+//         } else {
+//             impares.push(arr[i]);
+//         }
+//     }
+//     console.log(`Los ingredientes impares son: ${impares}, y los pares son: ${pares}`);
+// }
+
+// parImpar(ingredientes);
+
+const capitalizeName = (names) => {
+    const splitNames = names.split(' ');
+    let fullName = '';
+
+    for (let index = 0; index < splitNames.length; index++) {
+        const capitalizeFirstLetter = splitNames[index].split('')[0].toUpperCase();
+        const namesSplit = splitNames[index].split('');
+        namesSplit[0] = capitalizeFirstLetter;
+        fullName = `${fullName} ${namesSplit.join('')}`;
+        // console.log(fullName)
     }
-    // Metodo dentro de class (son funciones pero al estar dentro de la class se llaman metodos)
-    desplazar = function (X, Y) {
-        this.posicionX = X;
-        this.posicionY = Y;
-    }
-    // Metodo
-    posicion = function () {
-        return `Robot ${this.color}, en X ${this.posicionX} y en Y ${this.posicionY}.`;
-    }
-}
+    return fullName.trim();
+};
 
-const robot1 = new Robot("celeste", 10, 15);
-console.log(robot1);
-robot1.desplazar(20, 25);
-console.log(robot1);
-console.log(robot1.posicion())
-
-class Chocolate {
-    constructor(tipo, marca) {
-        this.tipo = tipo;
-        this.marca = marca;
-    }
-}
-
-let miChocolate = new Chocolate("Blanco", "Milkaut");
-
-
-class Auto {
-    constructor(marca, modelo, anio) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.anio = anio;
-    }
-    // Metodo
-    arrancar = function () {
-        return `El auto arranco`;
-    }
-    // Metodo
-    getMarca = function () {
-        return this.marca;
-    }
-}
-
-let auto1 = new Auto('Ford', 'Focus', 2017);
-
-
+console.log(capitalizeName('gonzalo ferreyra'));
