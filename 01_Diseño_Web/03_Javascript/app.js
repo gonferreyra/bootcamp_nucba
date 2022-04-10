@@ -185,7 +185,7 @@ preguntarPresupuesto();
 // }
 
 // parImpar(ingredientes);
-
+/*
 const capitalizeName = (names) => {
     const splitNames = names.split(' ');
     let fullName = '';
@@ -201,3 +201,4 @@ const capitalizeName = (names) => {
 };
 
 console.log(capitalizeName('gonzalo ferreyra'));
+*/
