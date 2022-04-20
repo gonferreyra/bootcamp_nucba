@@ -189,6 +189,36 @@ console.log(meses);
 b) 
 console.log(mes1.slice(1, 4));
 
+*//*
+-Aprovechando la función constructora "Zapatillas" desarrollada en el ejercicio anterior, crear un array de objetos que contenga las zapatillas que construimos anteriormente. (Si es necesario, puede copiar y pegar la función constructora y los objetos). */
+/*
+
+class Zapatillas {
+    constructor(marca, color, talle) {
+        this.marca = marca;
+        this.color = color;
+        this.talle = talle;
+    }
+}
+
+const nike = new Zapatillas('nike', 'negro', 35);
+const adidas = new Zapatillas('adidas', 'azul', 33);
+const reebok = new Zapatillas('reebok', 'blanco', 42);
+const wilson = new Zapatillas('wilson', 'blanco', 44);
+const fila = new Zapatillas('fila', 'rojo', 44);
+
+function mostrarZapatilla(zapatilla) {
+    console.log(`La zapatilla es de marca ${zapatilla.marca}, su color es ${zapatilla.color} y su talle ${zapatilla.talle}`);
+}
+
+let array = [];
+function newArray(marca, color, talle) {
+    array.push(new Zapatillas(marca, color, talle));
+}
+
+newArray("Oasic", "negro", 44);
+newArray("Jordan", "negro", 41);
+console.log(array);
 */
 /*
 
@@ -229,4 +259,108 @@ const numbers = (num1, num2, callback) => {
 
 console.log(numbers(15, 18, multiplicacion));
 */
+/*
+Crear el array de objetos "Pizzas". 🍕
+👉 Debemos crear 6 objetos como mínimo.
+👉 Cada objeto debe tener definido su id (1,2,3,etc), nombre, ingredientes (Sobre la base) y precio. (Ingredientes debe ser una lista). 
+
+🔥 Crear una iteración del array que imprima en consola:
+a) Las pizzas que tengan un id impar.
+b) ¿Hay alguna pizza que valga menos de $600?
+c) Los nombres de todos las pizzas.
+d) Los precios de las pizzas.
+e) El nombre de cada pizza con su respectivo precio.
+
+Cada respuesta debe ser, como siempre, usuario friendly. 
+Si (como en el punto B), la respuesta es un booleano, no imprimir el booleano. 
+Manejemos esa respuesta, pensando en que un usuario promedio va a leer eso. 
+
+Por ejemplo: "La pizza X, tiene un valor de $XXXX”. 💸
+*/
+const pizzas = [
+    {
+        id: 1,
+        nombre: "muzzarella",
+        ingredientes: "salsa de tomate, muzzarella",
+        precio: 500
+    },
+    {
+        id: 2,
+        nombre: "margarita",
+        ingredientes: "salsa de tomate, albahaca, muzzarella",
+        precio: 900
+    },
+    {
+        id: 3,
+        nombre: "cuatro quesos",
+        ingredientes: "mozzarella, gorgonzola, parmesano, fontina",
+        precio: 1200
+    },
+    {
+        id: 4,
+        nombre: "pepperoni",
+        ingredientes: "salsa de tomate, muzzarella, pepperoni, albahaca",
+        precio: 1300
+    },
+    {
+        id: 5,
+        nombre: "champiñones",
+        ingredientes: "salsa de tomate, muzzarella, portobellos, champiñones",
+        precio: 1600
+    },
+    {
+        id: 6,
+        nombre: "fugazza",
+        ingredientes: "cebolla, muzzarella, aceitunas",
+        precio: 800
+    }
+]
+/*
+a) Las pizzas que tengan un id impar.
+
+for (let i = 0; i < pizzas.length; i++) {
+    if (pizzas[i].id % 2 != 0) {
+        console.log(pizzas[i]);
+    }
+}
+*/ /*
+b) ¿Hay alguna pizza que valga menos de $600?
+
+for (let i = 0; i < pizzas.length; i++) {
+    if (pizzas[i].precio < 600) {
+        console.log(`La pizza ${pizzas[i].nombre} tiene un valor de $${pizzas[i].precio}, y tiene los siguientes ingredientes ${pizzas[i].ingredientes}`);
+    }
+}
+*/ /*
+c) Los nombres de todos las pizzas.
+
+let variedades = [];
+for (let i = 0; i < pizzas.length; i++) {
+   variedades.push(pizzas[i].nombre)
+}
+console.log(`Las variedades de pizzas disponibles son ${variedades}`)
+
+-- Otra opcion
+
+for (let i = 0; i < pizzas.length; i++) {
+   console.log(`Pizza ${pizzas[i].nombre}`)
+}
+
+*/ /*
+d) Los precios de las pizzas.
+
+for (let i = 0; i < pizzas.length; i++) {
+    console.log(`La pizza tiene un valor de ${pizzas[i].precio} pesos`);
+}
+*/
+/*
+
+e) El nombre de cada pizza con su respectivo precio.
+
+for (let i = 0; i < pizzas.length; i++) {
+    console.log(`La pizza ${pizzas[i].nombre} tiene un precio de ${pizzas[i].precio} pesos`);
+} 
+*/
+
+
 

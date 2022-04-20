@@ -202,3 +202,20 @@ const capitalizeName = (names) => {
 
 console.log(capitalizeName('gonzalo ferreyra'));
 */
+
+/*
+let tecnologies = ["HTML", "CSS", "Javascript"];
+let position = ["Trainee", "Junior"];
+
+const newJob = (search, techrequired) => {
+    for (let i=0; i<position.length; i++) {
+        for (let j=0; j<tecnologies.length; j++) {
+            if (position[i] == search && tecnologies[j] == techrequired) {
+                console.log(`Send job aplication for ${tecnologies[j]} ${position[i]}`);
+            }
+        }
+    }
+}
+
+newJob("Trainee", "Javascript");
+*/
