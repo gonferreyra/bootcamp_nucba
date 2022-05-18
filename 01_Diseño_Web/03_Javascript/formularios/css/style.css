@@ -1,7 +1,7 @@
 .formulario {
     display: grid;
     grid-template-columns: 10rem 1rem;
-    gap: 10px;
+    gap: 5rem;
 }
 
 .formulario__input-error {

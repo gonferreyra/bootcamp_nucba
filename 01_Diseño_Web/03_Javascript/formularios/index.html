@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,33 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Formularios y expresiones regulares</title>
 </head>
+
 <body>
     <main>
         <form action="" class="formulario" id="formulario">
             <!-- Grupo usuario -->
-            <div>
+            <div id="grupo_usuario">
                 <label for="">Usuario</label>
                 <div>
                     <input type="text" name="usuario" id="usuario" placeholder="Ariel123">
+                </div>
+                <p class="formulario__input-error">
+                    El usuario tiene que ser de 4 a 16 digitos y solo puede contener letras y numeros, guion
+                </p>
+            </div>
+            <div id="grupo_nombre">
+                <label for="">Nombre</label>
+                <div>
+                    <input type="text" name="nombre" id="nombre" placeholder="Gonzalo123">
+                </div>
+                <p class="formulario__input-error">
+                    El usuario tiene que ser de 4 a 16 digitos y solo puede contener letras y numeros, guion
+                </p>
+            </div>
+            <div id="grupo_telefono">
+                <label for="">Nombre</label>
+                <div>
+                    <input type="number" name="telefono" id="telefono" placeholder="Gonzalo123">
                 </div>
                 <p class="formulario__input-error">
                     El usuario tiene que ser de 4 a 16 digitos y solo puede contener letras y numeros, guion
@@ -27,4 +47,5 @@
     </main>
     <script src="./js/app.js"></script>
 </body>
+
 </html>
