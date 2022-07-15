@@ -219,3 +219,16 @@ const newJob = (search, techrequired) => {
 
 newJob("Trainee", "Javascript");
 */
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const par = () => {
+    let par = [];
+    numbers.forEach(number => {
+        if (number % 2 === 0) {
+            par.push(number);
+        }
+    })
+    console.log(par);
+}
+par();

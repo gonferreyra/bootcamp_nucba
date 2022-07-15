@@ -1,0 +1,40 @@
+Saber conceptos
+
+Que es react?
+componenetes encapsulados, actualizar y renderizar
+
+que es un framework?
+
+
+React vino a solucionar el problema de rendimiento y de capacidad de usuarios que se creaba con js vanilla al hacer las SPA no????
+
+Ventajas
+
+recursos abundanes
+estructura de componenetes facil de mantener
+flujo de datos unidireccional
+
+
+virtual dom
+
+componentes
+
+Atomic design
+atomos
+moleculas
+templates
+paginas
+
+
+interfaz
+
+
+estados
+
+Caracteristicas
+
+Fases de ciclo de vida
+
+
+
+
